@@ -1,0 +1,40 @@
+.DS_Store
+/.idea
+.byebug_history
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+# Ignore Rubocop cache
+/.cache
+
+# Ignore Ruby Advisory DB
+/.local
+
+# Ignore bundler config.
+/.bundle
+/vendor/bundle
+
+# rspec failure tracking
+.rspec_status
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# The .env file is used for both dev and test
+# and creates more problems than it solves
+.env
+
+# .env.*.local files are where we put actual secrets we need for dev and test,
+# so we really don't wnat them in version control
+.env.*.local
+
+# Ignore SimpleCov coverage reports
+/coverage

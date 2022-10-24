@@ -1,0 +1,26 @@
+require:
+  - standard
+  - rubocop-rake
+  - rubocop-rspec
+
+inherit_gem:
+  standard: config/base.yml
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - node_modules/**/*
+    - public/**/*
+    - vendor/**/*
+    - db/**/*
+    - bin/**/*
+    - tmp/**/*
+
+RSpec:
+  Enabled: true
+RSpec/ExampleLength:
+  Enabled: false
+RSpec/MultipleExpectations:
+  Enabled: false
+Bundler/DuplicatedGem:
+  Enabled: false
