@@ -67,7 +67,7 @@ jobs:
           bundler-cache: true
 
       - name: Spin up SolrCloud + Zookeeper cluster
-        uses: isbang/compose-action@v1.3.2
+        uses: isbang/compose-action@v1.4.1
         with:
           compose-file: "./solr/docker-compose.yml"
           down-flags: "--volumes"
